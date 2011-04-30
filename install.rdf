@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+    <Description about="urn:mozilla:install-manifest">
+        <em:id>{88c0fe98-8034-efaa-ba61-6d021f798927}</em:id>
+        <em:version>0.4.1</em:version>
+        <em:type>2</em:type>
+
+        <!-- Firefox --> 
+        <em:targetApplication>
+            <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>1.0</em:minVersion>
+                <em:maxVersion>4.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+
+        <!-- Flock -->
+        <em:targetApplication>
+            <Description>
+                <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
+                <em:minVersion>0.4</em:minVersion>
+                <em:maxVersion>1.0</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+   
+        <!-- Front End MetaData -->
+        <em:name>Scuttle</em:name>
+        <em:description>Store, share and tag your bookmarks.</em:description>
+        <em:creator>Marcus Campbell</em:creator>
+        <em:homepageURL>http://scuttle.org/</em:homepageURL>
+        <em:optionsURL>chrome://scuttle/content/options.xul</em:optionsURL>
+        <em:iconURL>chrome://scuttle/skin/scuttle-icon.png</em:iconURL>
+    </Description>
+</RDF>

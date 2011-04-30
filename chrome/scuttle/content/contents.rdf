@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+    <Seq about="urn:mozilla:package:root">
+        <li resource="urn:mozilla:package:scuttle"/>
+    </Seq>
+    
+    <Description about="urn:mozilla:package:scuttle"
+        chrome:extension="true"
+        chrome:name="scuttle"/>
+    
+    <Seq about="urn:mozilla:overlays">
+        <li resource="chrome://browser/content/browser.xul"/>
+    </Seq>
+    
+    <Seq about="chrome://browser/content/browser.xul">
+        <li>chrome://scuttle/content/scuttle.xul</li>
+    </Seq>
+</RDF>

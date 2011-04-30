@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="chrome://scuttle/skin/scuttle.css"?>
+<!DOCTYPE overlay SYSTEM "chrome://scuttle/locale/scuttle.dtd">
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    id="scuttle-overlay"
+    centerWindowOnScreen="true">
+    <script type="application/x-javascript" src="chrome://scuttle/content/scuttle.js"/>
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="scuttle-button-my"
+            class="toolbarbutton-1 chromeclass-toolbar-additional"
+            label="&scuttle.button.my;"
+            tooltiptext="&scuttle.button.my;"
+            onclick="scuttle_my(event, true);"
+            oncommand="scuttle_my(event);"/>
+        <toolbarbutton id="scuttle-button-add"
+            class="toolbarbutton-1 chromeclass-toolbar-additional"
+            label="&scuttle.button.add;"
+            tooltiptext="&scuttle.button.add;"
+            oncommand="scuttle_add();"/>
+    </toolbarpalette>
+    <popup id="contentAreaContextMenu" onpopupshown="scuttle_menu()">
+        <menuitem id="scuttle-context-page"
+            insertafter="context-bookmarkpage"
+            class="menuitem-iconic"
+            label="&scuttle.button.add;"
+            image="chrome://scuttle/skin/scuttle-icon-small.png"
+            accesskey="c"
+            hidden="true"
+            oncommand="scuttle_add();"/>
+        <menuitem id="scuttle-context-link"
+            insertafter="context-bookmarklink"
+            class="menuitem-iconic"
+            label="&scuttle.context.link;"
+            image="chrome://scuttle/skin/scuttle-icon-small.png"
+            accesskey="c"
+            hidden="true"
+            oncommand="scuttle_add(typeof(gContextMenu.linkURL) == 'string' ? gContextMenu.linkURL : gContextMenu.linkURL(), gContextMenu.linkText());"/>
+        <menuitem id="scuttle-context-selection"
+            insertafter="context-searchselect"
+            class="menuitem-iconic"
+            label="&scuttle.button.add;"
+            image="chrome://scuttle/skin/scuttle-icon-small.png"
+            accesskey="c"
+            hidden="true"
+            oncommand="scuttle_add();"/>
+    </popup>
+</overlay>

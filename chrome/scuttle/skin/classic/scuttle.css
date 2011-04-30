@@ -1,0 +1,47 @@
+/* My Scuttle */
+
+#scuttle-button-my {
+    list-style-image: url("chrome://scuttle/skin/scuttle-button-my.png"); 
+    -moz-image-region: rect(0px 24px 24px 0px);  
+}
+#scuttle-button-my:hover {
+    -moz-image-region: rect(24px 24px 48px 0px);
+}
+#scuttle-button-my[disabled="true"] {
+    -moz-image-region: rect(48px 24px 72px 0px) !important;
+}
+
+toolbar[iconsize="small"] #scuttle-button-my {
+    list-style-image: url("chrome://scuttle/skin/scuttle-button-my-small.png");
+    -moz-image-region: rect(0px 16px 16px 0px);
+}
+toolbar[iconsize="small"] #scuttle-button-my:hover {
+    -moz-image-region: rect(16px 16px 32px 0px);
+}
+toolbar[iconsize="small"] #scuttle-button-my[disabled="true"] {
+    -moz-image-region: rect(32px 16px 48px 0px) !important;
+}
+
+/* Scuttle This Page... */
+
+#scuttle-button-add {
+    list-style-image: url("chrome://scuttle/skin/scuttle-button-add.png"); 
+    -moz-image-region: rect(0px 24px 24px 0px);  
+}
+#scuttle-button-add:hover {
+    -moz-image-region: rect(24px 24px 48px 0px);
+}
+#scuttle-button-add[disabled="true"] {
+    -moz-image-region: rect(48px 24px 72px 0px) !important;
+}
+
+toolbar[iconsize="small"] #scuttle-button-add {
+    list-style-image: url("chrome://scuttle/skin/scuttle-button-add-small.png");
+    -moz-image-region: rect(0px 16px 16px 0px);
+}
+toolbar[iconsize="small"] #scuttle-button-add:hover {
+    -moz-image-region: rect(16px 16px 32px 0px);
+}
+toolbar[iconsize="small"] #scuttle-button-add[disabled="true"] {
+    -moz-image-region: rect(32px 16px 48px 0px) !important;
+}

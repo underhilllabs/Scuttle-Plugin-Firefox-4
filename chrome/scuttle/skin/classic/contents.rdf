@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+    <Seq about="urn:mozilla:skin:root">
+        <li resource="urn:mozilla:skin:classic/1.0" />
+    </Seq>
+    
+    <Description about="urn:mozilla:skin:classic/1.0">
+        <chrome:packages>
+            <Seq about="urn:mozilla:skin:classic/1.0:packages">
+                <li resource="urn:mozilla:skin:classic/1.0:scuttle"/>
+            </Seq>
+        </chrome:packages>
+    </Description>
+    
+    <Seq about="urn:mozilla:stylesheets">
+        <li resource="chrome://browser/content/browser.xul"/>
+        <li resource="chrome://global/content/customizeToolbar.xul"/>
+    </Seq>
+    
+    <Seq about="chrome://browser/content/browser.xul">
+        <li>chrome://scuttle/skin/scuttle.css</li>
+    </Seq>
+    
+    <Seq about="chrome://global/content/customizeToolbar.xul">
+        <li>chrome://scuttle/skin/scuttle.css</li>
+    </Seq>
+</RDF>

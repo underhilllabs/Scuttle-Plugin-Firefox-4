@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://browser/skin/"?>
+<!DOCTYPE dialog SYSTEM "chrome://scuttle/locale/scuttle.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    id="scuttle-options-dialog"
+    title="&scuttle.options.title;"
+    centerWindowOnScreen="true"
+    onload="options_load()"
+    ondialogaccept="return options_accept()">
+    
+    <script type="application/x-javascript" src="chrome://scuttle/content/options.js"/>
+    
+    <groupbox>
+        <caption label="Installation" />
+        <grid>
+        <columns>
+            <column/>
+            <column/>
+        </columns>
+        <rows>
+            <row align="center">
+                <label control="scuttle-url" value="&scuttle.options.url.label;"/>
+                <textbox id="scuttle-url"
+                    size="35"
+                    tooltiptext="&scuttle.options.url.tooltip;"/>
+            </row>
+        </rows>
+        </grid>
+    </groupbox>
+
+    <groupbox>
+        <caption label="Pop-up Window" />
+        <grid>
+        <columns>
+            <column/>
+            <column/>
+        </columns>
+        <rows>
+            <row align="center">
+                <label control="scuttle-width" value="&scuttle.options.width.label;"/>
+                <textbox id="scuttle-width"
+                    size="5"
+                    tooltiptext="&scuttle.options.width.tooltip;"/>
+                <label value="px"/>
+            </row>
+            <row align="center">
+                <label control="scuttle-height" value="&scuttle.options.height.label;"/>
+                <textbox id="scuttle-height"
+                    size="5"
+                    tooltiptext="&scuttle.options.height.tooltip;"/>
+                <label value="px"/>
+            </row>
+        </rows>
+        </grid>
+    </groupbox>
+</dialog>
