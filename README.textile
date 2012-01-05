@@ -5,6 +5,7 @@ I updated the original plugin and set the Max Version to 10.* so it could be ins
 Works like a charm.  You can set which instance of scuttle you want to post bookmarks to in the preferences page.
 
 To package the extension for installation, run the following command in the root directory:
+
 bc.. zip -r scuttle-0.9.0-firefox+fl.xpi chrome chrome.manifest defaults install.rdf 
 
 h3. Changelog
