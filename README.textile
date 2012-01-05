@@ -1,5 +1,5 @@
 h2. Scuttle Bookmarking Plugin for Firefox
 
-I updated the original plugin and set the Max Version to 8.* so it could be installed on Firefox 8 and lower.
+I updated the original plugin and set the Max Version to 10.* so it could be installed on Firefox 10 and lower.
 
 Works like a charm.  You can set which instance of scuttle you want to post bookmarks to in the preferences page.
