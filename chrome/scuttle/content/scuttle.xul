@@ -45,4 +45,8 @@
             hidden="true"
             oncommand="scuttle_add();"/>
     </popup>
+    <keyset id="mainKeyset">
+      <key id="scuttle-key" modifiers="shift control" key="b" oncommand="scuttle_add();"/>
+    </keyset>
+
 </overlay>
