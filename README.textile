@@ -10,9 +10,7 @@ bc.. zip -r scuttle-0.9.0-firefox+fl.xpi chrome chrome.manifest defaults install
 
 h3. Important!
 
-If you just want to download and install the plug-in, there is no need to download the source and package 
-plugin yourself, just go to the download page and download the latest version: it works with all versions 
-of firefox.
+If you just want to download and install the plug-in, there is no need to download the source and package the plugin yourself, just go to the download page and download the latest version: it works with all versions of firefox.
 
 h3. Changelog
 
